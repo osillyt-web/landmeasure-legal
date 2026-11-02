@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — LandMeasure</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#f6f7f5; color:#1d2420;
+         font:16px/1.62 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 780px; margin: 0 auto; padding: 28px 20px 64px; }
+  header { border-bottom: 2px solid #2f7255; padding-bottom: 14px; margin-bottom: 26px; }
+  h1 { font-size: 26px; line-height:1.25; margin: 0 0 8px; color:#205641; }
+  h2 { font-size: 19px; margin: 30px 0 8px; color:#205641; }
+  p, li { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  .meta { color:#5b6660; font-size:14px; }
+  .langs { margin: 0 0 18px; font-size:15px; }
+  .langs a { color:#205641; margin-right:14px; text-decoration:none; border-bottom:1px solid #95d5b2; }
+  .note { background:#eef4f0; border-left:4px solid #2f7255; padding:12px 14px; margin:18px 0; }
+  table { border-collapse: collapse; width:100%; margin:14px 0; font-size:15px; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid #d9e0da; vertical-align:top; }
+  th { background:#eef4f0; font-weight:600; }
+  a { color:#205641; }
+  footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid #d9e0da; color:#5b6660; font-size:14px; }
+  @media print { body { background:#fff; } }
+</style>
+</head>
+<body>
+<main>
+<nav class="langs"><a href="index.html">Все языки</a><a href="privacy-ru.html">Русский</a><a href="privacy-uk.html">Українська</a><a href="privacy-en.html">English</a></nav>
+
+<header>
+  <h1>Privacy Policy — LandMeasure</h1>
+  <div class="meta">Effective 2 November 2026 · version 1.0 · app com.landmeasure.app</div>
+</header>
+
+<div class="note">
+  <strong>In short:</strong> the app has no sign-up and no account. Measurements, coordinates, photos and
+  voice notes are stored only on your phone, encrypted, and are never uploaded. The only outbound traffic
+  is a weather request (coordinates rounded to about 1 km) and map tiles.
+</div>
+
+<h2>1. Who processes the data</h2>
+<p>LandMeasure (localized as «ПолеМер» in Russian, «ПолеМір» in Ukrainian, «ЖерӨлшер» in Kazakh) is developed
+and published by an individual developer. Contact: <a href="mailto:codeveil3@gmail.com">codeveil3@gmail.com</a>.</p>
+
+<h2>2. Data created and stored on the device</h2>
+<ul>
+  <li><strong>Measurement point coordinates</strong> (latitude, longitude), computed area and perimeter.</li>
+  <li><strong>Field name, comment, measurement history</strong>, measurement method, date.</li>
+  <li><strong>Photos</strong> you add to a measurement.</li>
+  <li><strong>Voice notes</strong> recorded when you tap “Record”.</li>
+  <li><strong>App settings</strong>: language, units, irrigation parameters.</li>
+</ul>
+<p>All of it is kept in the app's private storage on the device: the database is encrypted (SQLCipher), photos
+and audio are stored encrypted. The developer has no access to this data and receives no copies.</p>
+
+<h2>3. What leaves the device</h2>
+<table>
+  <tr><th>Service</th><th>What is sent</th><th>Why</th></tr>
+  <tr><td>Open-Meteo (api.open-meteo.com)</td>
+      <td>Coordinates rounded to two decimals — about 1 km. No device or user identifiers.</td>
+      <td>7-day weather forecast and water-balance calculation for the field.</td></tr>
+  <tr><td>OpenStreetMap (tile.openstreetmap.org)</td>
+      <td>The requested map tile number and the device IP address (as with any website).</td>
+      <td>Map display while walking the boundary.</td></tr>
+  <tr><td>Esri ArcGIS (server.arcgisonline.com)</td>
+      <td>The requested satellite tile number and the device IP address.</td>
+      <td>Satellite layer when placing points.</td></tr>
+</table>
+<p>These requests are only made for the relevant feature. Offline, the app still works: measurements, history,
+area calculations and export are available; the map and forecast are not.</p>
+
+<h2>4. What the app does not do</h2>
+<ul>
+  <li>No sign-up, no accounts, no social login.</li>
+  <li>No analytics, usage statistics or tracking SDKs (Firebase, AppsFlyer, Facebook SDK, etc.).</li>
+  <li>No advertising and no advertising identifiers.</li>
+  <li>No selling or sharing of data beyond the technical requests listed above.</li>
+  <li>No background operation and no location tracking without your action.</li>
+</ul>
+
+<h2>5. Permissions and why</h2>
+<ul>
+  <li><strong>Location</strong> — to record measurement points. Requested when you open a GPS measurement. You can decline: “By points” and “Manual” work without GPS.</li>
+  <li><strong>Camera</strong> — to take a photo when you tap “Camera”.</li>
+  <li><strong>Microphone</strong> — only after you tap “Record”. If declined, everything else keeps working.</li>
+  <li><strong>Internet</strong> — map and weather forecast.</li>
+</ul>
+<p>Gallery access uses the system photo picker: the app only sees the photos you select.</p>
+
+<h2>6. Backups</h2>
+<p>The app can export a backup file. It is created by your action, saved where you choose, and encrypted.
+The developer has no access to it.</p>
+
+<h2>7. Retention and deletion</h2>
+<p>Data stays on the device until you delete it. You can delete a measurement or an attached file in the app;
+uninstalling the app removes all of its data. Since the developer never receives your data, there is nothing
+to delete server-side — a deletion request amounts to deleting data on the device.</p>
+
+<h2>8. Children</h2>
+<p>The app is intended for adult users — farmers, agronomists, landowners — and is not directed to children.
+Children's data is not knowingly collected.</p>
+
+<h2>9. Your rights</h2>
+<p>You may know what is processed (section 2), delete it (section 7), and ask any question at
+<a href="mailto:codeveil3@gmail.com">codeveil3@gmail.com</a>. We reply within 30 days.</p>
+
+<h2>10. Changes</h2>
+<p>If what the app processes changes, this policy is updated and the date above changes. Material changes will
+be shown in the app or in the Google Play release notes.</p>
+
+<h2>11. Measurement accuracy</h2>
+<p>Area is measured from GPS data. Accuracy depends on signal conditions (typically 3–10 m in open terrain) and
+does not replace a land survey or cadastral documents. The app warns about poor signal and offers manual input.</p>
+
+<footer>ПолеМір / ПолеМер / LandMeasure · com.landmeasure.app · обновлено 2 ноября 2026 г.</footer>
+</main>
+</body>
+</html>
